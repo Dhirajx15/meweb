@@ -38,7 +38,7 @@ e. Others
 /* ------------------------------------------------------------------ */
 
 html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, h7, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
@@ -87,7 +87,7 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote, q { quotes: &#8220 &#8220; }
+blockquote, q { quotes:&#8220 &#8220; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -157,18 +157,19 @@ body {
        Vertical rhythm with leading derived from 6
 --------------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 ,h7{
    color: #313131;
 	font-family: 'opensans-bold', sans-serif;
    font-weight: normal;
 }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a { font-weight: inherit; }
+h1 { font-size: 32px; line-height: 45px; margin-bottom: 12px; letter-spacing: -1px; }
 h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
 h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
 h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
+h7 { font-size: 45px; line-height: 35px; margin-bottom: 8px; letter-spacing: -1px; }
 .subheader { }
 
 p { margin: 0 0 30px 0; }
@@ -503,6 +504,36 @@ input[type="reset"]:active,
 input[type="button"]:active {
    background: #3d4145;
    color: #fff;
+}.button {
+   /* Common button styles */
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: white;
+   text-decoration: none;
+   border-radius: 4px;
+   border: none;
+   transition: background-color 0.3s ease;
+}
+
+.button:hover {
+   /* Button hover styles */
+   background-color: #45a049;
+}
+
+.button-download {
+   /* Specific styles for the download button */
+   background-color: #f44336;
+}
+
+.button-download:hover {
+   /* Specific styles for the download button on hover */
+   background-color: #d32f2f;
+}
+
+.button i {
+   /* Styles for the icon within the button */
+   margin-right: 5px;
 }
 
 .button.full-width,
